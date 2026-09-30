@@ -66,7 +66,7 @@ namespace xadrez
                 if (tab.posicaoValida(pos) && livre(pos) && qteMovimentos == 0)
                 {
                     mat[pos.linha, pos.coluna] = true;
-                }
+                }   
 
                 pos.definirValores(posicao.linha + 1, posicao.coluna - 1);
                 if (tab.posicaoValida(pos) && existeInimigo(pos))
